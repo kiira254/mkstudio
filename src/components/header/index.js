@@ -7,12 +7,12 @@ const Navbar = () => {
     <>
           
 <nav>
-<img src={IMAGES.imgTwo}alt='logo' />
 
       <PrimaryNav >
-      <img src={IMAGES.imgTwo}alt='logo' />
-        
-        <Menu>
+      <img src={IMAGES.imgTwo}alt='logo' style={{alignSelf:'flex-start'}}/>
+        <Hamburger/>
+        <div style={{alignSelf:'center'}}>
+          <Menu >
           <MenuLink to="/About" activeStyle>
             About
           </MenuLink>
@@ -29,7 +29,9 @@ const Navbar = () => {
             contact
           </MenuLink>
         </Menu>
+        </div>
       </PrimaryNav>
+      
       </nav>
     </>
     

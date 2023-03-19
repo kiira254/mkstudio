@@ -6,7 +6,7 @@ export const PrimaryNav = styled.nav`
   height: 90px;
   display: flex;
   justify-content: space-between;
-  padding: 0.18rem calc((100vw - 1000px) / 2);
+  margin-right: 800px
 `
 export const MenuLink = styled(Link)`
   color: #949494;
@@ -19,6 +19,8 @@ export const MenuLink = styled(Link)`
   &.active {
     color:brown;
   }
+  
+  
 `
 export const Hamburger = styled(FaBars)`
   display: none;

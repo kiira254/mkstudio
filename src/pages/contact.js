@@ -5,7 +5,7 @@ function Contact() {
   return (
     
     <class>
-        <img src={IMAGES.imgThree}alt='logo' />
+        <img src={IMAGES.imgThree}alt='logo' align='right'   />
     <div >
         <center><h1 width='285px'> Contuct us</h1></center>
 
