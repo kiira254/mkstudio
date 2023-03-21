@@ -1,15 +1,48 @@
 import React, { useState } from "react";
-import { Container } from "react-bootstrap";
 import IMAGES from '../images'
+import ReactDOM from 'react-dom/client';
+
+
 
 function Contact() {
+  const [name, setName] = useState("");
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    alert(`The name you entered was: ${name}`)
+    
+  }
   
   return (
     <div >
-                    <img src={IMAGES.imgThree} alt='manbottom' style={{position:'',paddingBottom:'8%', float:'right'}} />
-      <center><h1 width='285px'> Contact us</h1></center>
-      <Container>
-      <div class="row" style={{padding:'4%'}} >
+    <img src={IMAGES.imgThree} alt='manbottom' style={{position:'',paddingBottom:'8%', float:'right'}} />
+    <center><h1 width='285px'> Contact us</h1></center>
+    <div class="row" style={{padding:'4%'}} >
+      <div class="column" style={{float:'Right' ,width:'50%'}}>  
+        
+        
+        <form onSubmit={handleSubmit}>
+            <label style={{padding:'4%'}}> First Name<br/>
+            <input 
+              type="text" 
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+            />
+          </label>
+          
+          <label style={{padding:'4%'}}> Last name
+            <input 
+              type="text" 
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+            />
+            
+          </label>
+          <textarea />
+
+          <input type="submit" />
+
+        </form>
+      </div>
         <div class="column" style={{width:'50%' }}>
           <p> Contact us</p>
           <h1>Chat to our friendly team</h1>
@@ -30,13 +63,13 @@ function Contact() {
             </div>
           </div>
         </div>
-        <div class="column" style={{float:'Right' ,width:'50%', backgroundColor: 'white'}}>
         
-        </div>
       </div>  
-      </Container>
+      
       </div>
   )
 }
+const root = ReactDOM.createRoot(document.getElementById('root'));
+
 export default Contact
 document.body.style= 'background:#FFF8DC;';

@@ -6,36 +6,42 @@ function Shop() {
   return (
     <div>
       <center> <h1> Shop </h1> </center>
-      <div class="row"style={{display: 'flex',flexWrap: 'wrap', padding: '0 4px' }}>
-        <div class="column" style={{flex:'50%', padding:'0 4px'}}>
-          <img  src={IMAGES.img1} alt="Display" />
-          <img src={IMAGES.img1} alt="Display" />
-          <img  src={IMAGES.img1} alt="Display" />
-          <img  src={IMAGES.img1} alt="Display" />
+      <center>
+      <div class="row"style={{display: 'center' }}>
+        <div class="column" style={{align:'center'}}>
           
-        </div>
-        <div class="column">
-          <img  src={IMAGES.img1} alt="Display" />
-          <img  src={IMAGES.img1} alt="Display" />
-          <img  src={IMAGES.img1} alt="Display" />
-          <img  src={IMAGES.img1} alt="Display" />
+          <img  src={IMAGES.img1} alt="Display" style={{margin:'2%' }}/>
           
-        </div>
-        <div class="column">
-          <img  src={IMAGES.img1} alt="Display" />
-          <img  src={IMAGES.img1} alt="Display" />
-          <img  src={IMAGES.img1} alt="Display" />
-          <img cliassName="w-full" src={IMAGES.img1} alt="Display" />
+          <img src={IMAGES.img1} alt="Display"style={{margin:'2%'}} />
+          <img  src={IMAGES.img1} alt="Display" style={{margin:'2%'}}/>
+          <img  src={IMAGES.img1} alt="Display"style={{margin:'2%'}} />
          
         </div>
-        <div class="column">
-          <img  src={IMAGES.img1} alt="Display" />
-          <img  src={IMAGES.img1} alt="Display" />
-          <img  src={IMAGES.img1} alt="Display" />
-          <img  src={IMAGES.img1} alt="Display" />
+        <div class="column" style={{}}>
+          <img  src={IMAGES.img1} alt="Display" style={{margin:'2%' }}/>
+          <img src={IMAGES.img1} alt="Display"style={{margin:'2%' }} />
+          <img  src={IMAGES.img1} alt="Display" style={{margin:'2%' }}/>
+          <img  src={IMAGES.img1} alt="Display"style={{margin:'2%' }} />
+          
+        </div>
+
+        <div class="column" style={{}}>
+          <img  src={IMAGES.img1} alt="Display" style={{margin:'2%', }}/>
+          <img src={IMAGES.img1} alt="Display"style={{margin:'2%', }} />
+          <img  src={IMAGES.img1} alt="Display" style={{margin:'2%', }}/>
+          <img  src={IMAGES.img1} alt="Display"style={{margin:'2%', }} />
+          
+        </div>
+        
+        <div class="column" style={{}}>
+          <img  src={IMAGES.img1} alt="Display" style={{margin:'2%', }}/>
+          <img src={IMAGES.img1} alt="Display"style={{margin:'2%', }} />
+          <img  src={IMAGES.img1} alt="Display" style={{margin:'2%', }}/>
+          <img  src={IMAGES.img1} alt="Display"style={{margin:'2%', }} />
           
         </div>
       </div>
+      </center>
       </div>
   )
 }
